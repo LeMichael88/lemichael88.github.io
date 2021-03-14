@@ -23,6 +23,17 @@ const colors = {
   },
 }
 
-const theme = extendTheme({ config, colors })
+const components = {
+  Button: {
+    sizes: {
+      header: {
+        fontSize: '3xl',
+        padding: '0.5em 1em',
+      },
+    },
+  },
+}
+
+const theme = extendTheme({ config, colors, components })
 
 export default theme
