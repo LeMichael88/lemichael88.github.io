@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '@chakra-ui/react'
-import logo from '../logo.svg'
+import logo from '../resources/logo.svg'
 
 export default function Homepage() {
   return (
