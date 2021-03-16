@@ -1,29 +1,55 @@
 import React from 'react'
-import { Wrap, WrapItem, Button } from '@chakra-ui/react'
+import { Wrap, WrapItem, Button, useColorMode, Switch, HStack } from '@chakra-ui/react'
+import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 export default function Header() {
+  const { colorMode, toggleColorMode } = useColorMode()
+
   return (
-    <Wrap spacing="2.5em" margin="3em" justify="center" overflow="hidden">
-      <WrapItem>
-        <Button colorScheme="red" size="header" variant="ghost">
-          About
-        </Button>
-      </WrapItem>
-      <WrapItem>
-        <Button colorScheme="red" size="header" variant="ghost">
-          Contact
-        </Button>
-      </WrapItem>
-      <WrapItem>
-        <Button colorScheme="red" size="header" variant="ghost">
-          Experiences
-        </Button>
-      </WrapItem>
-      <WrapItem>
-        <Button colorScheme="red" size="header" variant="ghost">
-          Projects
-        </Button>
-      </WrapItem>
-    </Wrap>
+    <div>
+      <HStack spacing="0.5em" margin="2em" justify="right">
+        <SunIcon w={5} h={5} />
+        <Switch defaultChecked colorScheme="red" size="lg" onChange={toggleColorMode} />
+        <MoonIcon w={5} h={5} />
+      </HStack>
+      <Wrap spacing="2.5em" margin="2em" justify="center" overflow="hidden">
+        <WrapItem>
+          <Button
+            colorScheme="red"
+            size="header"
+            variant={colorMode === 'light' ? 'outline' : 'ghost'}
+          >
+            About
+          </Button>
+        </WrapItem>
+        <WrapItem>
+          <Button
+            colorScheme="red"
+            size="header"
+            variant={colorMode === 'light' ? 'outline' : 'ghost'}
+          >
+            Contact
+          </Button>
+        </WrapItem>
+        <WrapItem>
+          <Button
+            colorScheme="red"
+            size="header"
+            variant={colorMode === 'light' ? 'outline' : 'ghost'}
+          >
+            Experiences
+          </Button>
+        </WrapItem>
+        <WrapItem>
+          <Button
+            colorScheme="red"
+            size="header"
+            variant={colorMode === 'light' ? 'outline' : 'ghost'}
+          >
+            Projects
+          </Button>
+        </WrapItem>
+      </Wrap>
+    </div>
   )
 }
