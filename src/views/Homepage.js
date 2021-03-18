@@ -1,25 +1,17 @@
 import React from 'react'
-import { Button } from '@chakra-ui/react'
-import logo from '../resources/logo.svg'
+import { Box, Center, Heading } from '@chakra-ui/react'
+import BackgroundImage from '../resources/images/pattern.png'
+import Header from '../components/Header'
 
 export default function Homepage() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Button colorScheme="red">Hello</Button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Header />
+      <Box bgImage={`url(${BackgroundImage})`}>
+        <Center padding="10em">
+          <Heading size="xl">Hello! I&apos;m Michael</Heading>
+        </Center>
+      </Box>
+    </Box>
   )
 }

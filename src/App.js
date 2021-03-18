@@ -1,12 +1,12 @@
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from './utils/theme'
-import Header from './components/Header'
+import Homepage from './views/Homepage'
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Header />
+      <Homepage />
     </ChakraProvider>
   )
 }
