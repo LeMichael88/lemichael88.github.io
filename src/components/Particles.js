@@ -32,7 +32,7 @@ export default function Particles() {
               },
             },
             color: {
-              value: colorMode === 'light' ? '#000000' : '#ffffff',
+              value: colorMode === 'light' ? '#000000' : '#FF5C79',
             },
             size: {
               value: 4,
