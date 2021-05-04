@@ -12,6 +12,7 @@ import {
 import ProfileImage from '../resources/images/MyPicture.JPG'
 import Particles from '../components/Particles'
 import Header from '../components/Header'
+import Contact from '../components/Contact'
 
 export default function Homepage() {
   return (
@@ -38,13 +39,13 @@ export default function Homepage() {
             src={ProfileImage}
           />
           <Stack>
-            <Text fontSize="md">
+            <Text fontSize="lg">
               Hi! My name is Michael Le and I&apos;m currently in my second year of
               computer science at the University of Waterloo. I&apos;m a software
               developer looking to learn as much as I can. I enjoy working cool projects
               and solving programming problems too!
             </Text>
-            <Text fontSize="md">
+            <Text fontSize="lg">
               I&apos;m based in Toronto, Canada and in my free time, I like to cook, bike,
               and play basketball. Feel free to contact me or take a look at my resume
               below!
@@ -54,19 +55,7 @@ export default function Homepage() {
       </Center>
 
       {/* Contact Boxes */}
-      <Center pt="5em">
-        <HStack spacing="4em">
-          <Box w="40px" h="40px" bg="yellow.200">
-            1
-          </Box>
-          <Box w="40px" h="40px" bg="tomato">
-            2
-          </Box>
-          <Box w="40px" h="40px" bg="pink.100">
-            3
-          </Box>
-        </HStack>
-      </Center>
+      <Contact />
     </Box>
   )
 }
