@@ -1,4 +1,5 @@
 {
+  "homepage": "http://lemichael88.github.io/website_v2",
   "name": "website_v2",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
     "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "gh-pages": "^3.1.0",
     "typescript": "^4.2.3"
   }
 }
