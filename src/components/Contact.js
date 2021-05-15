@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Center, Heading, HStack, IconButton, Text, VStack } from '@chakra-ui/react'
+import { IconButton, Text, VStack, Wrap, WrapItem } from '@chakra-ui/react'
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
 import { HiMail } from 'react-icons/hi'
 import Resume from '../resources/MichaelLeResume.pdf'
@@ -11,8 +11,15 @@ function Contact() {
   const [size4, setSize4] = useState(70)
 
   return (
-    <Center py="5rem">
-      <HStack spacing="7rem">
+    <Wrap
+      px="10%"
+      py="3rem"
+      spacing="3rem"
+      margin="2em"
+      justify="center"
+      overflow="hidden"
+    >
+      <WrapItem>
         <VStack>
           <Text fontSize="2xl" fontWeight="bold">
             Github
@@ -26,6 +33,8 @@ function Contact() {
             onMouseLeave={() => setSize(70)}
           />
         </VStack>
+      </WrapItem>
+      <WrapItem>
         <VStack>
           <Text fontSize="2xl" fontWeight="bold">
             LinkedIn
@@ -40,6 +49,8 @@ function Contact() {
             onMouseLeave={() => setSize2(70)}
           />
         </VStack>
+      </WrapItem>
+      <WrapItem>
         <VStack>
           <Text fontSize="2xl" fontWeight="bold">
             Resume
@@ -54,6 +65,8 @@ function Contact() {
             onMouseLeave={() => setSize3(70)}
           />
         </VStack>
+      </WrapItem>
+      <WrapItem>
         <VStack>
           <Text fontSize="2xl" fontWeight="bold">
             Email
@@ -68,8 +81,8 @@ function Contact() {
             onMouseLeave={() => setSize4(70)}
           />
         </VStack>
-      </HStack>
-    </Center>
+      </WrapItem>
+    </Wrap>
   )
 }
 
