@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IconButton, Text, VStack, Wrap, WrapItem } from '@chakra-ui/react'
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
 import { HiMail } from 'react-icons/hi'
-import Resume from '../resources/MichaelLeResume.pdf'
+import Resume from '../resources/MichaelLeResume_External.pdf'
 
 function Contact() {
   const [size, setSize] = useState(70)
