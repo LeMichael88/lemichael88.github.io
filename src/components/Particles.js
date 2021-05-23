@@ -26,7 +26,7 @@ export default function Particles() {
         params={{
           particles: {
             number: {
-              value: 150,
+              value: 125,
               density: {
                 enable: false,
               },
