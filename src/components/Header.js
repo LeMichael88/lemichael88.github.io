@@ -2,7 +2,7 @@ import React from 'react'
 import { Wrap, WrapItem, Button, useColorMode, Switch, HStack } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
-export default function Header() {
+export default function Header({ callbacks }) {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
@@ -15,6 +15,7 @@ export default function Header() {
       <Wrap spacing="2.5em" margin="2em" justify="center" overflow="hidden">
         <WrapItem>
           <Button
+            onClick={callbacks[0]}
             colorScheme="red"
             size="header"
             variant={colorMode === 'light' ? 'outline' : 'ghost'}
@@ -24,6 +25,7 @@ export default function Header() {
         </WrapItem>
         <WrapItem>
           <Button
+            onClick={callbacks[1]}
             colorScheme="red"
             size="header"
             variant={colorMode === 'light' ? 'outline' : 'ghost'}
@@ -33,6 +35,7 @@ export default function Header() {
         </WrapItem>
         <WrapItem>
           <Button
+            onClick={callbacks[2]}
             colorScheme="red"
             size="header"
             variant={colorMode === 'light' ? 'outline' : 'ghost'}
@@ -42,6 +45,7 @@ export default function Header() {
         </WrapItem>
         <WrapItem>
           <Button
+            onClick={callbacks[3]}
             colorScheme="red"
             size="header"
             variant={colorMode === 'light' ? 'outline' : 'ghost'}
