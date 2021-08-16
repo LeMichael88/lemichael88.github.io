@@ -10,7 +10,7 @@ function Footer() {
             Michael Le
           </Text>
           <Text fontSize="lg" fontWeight="bold">
-            Updated 05/20/2021
+            Updated 08/15/2021
           </Text>
         </VStack>
       </Center>
