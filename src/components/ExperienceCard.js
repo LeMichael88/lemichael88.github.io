@@ -24,7 +24,7 @@ export default function ExperienceCard({ data }) {
         </VStack>
       </WrapItem>
       <WrapItem>
-        <Flex>
+        <Flex alignItems="left">
           <UnorderedList pl="2rem" maxW="350px">
             {description.map((text) => (
               <ListItem key={text[0]} wordBreak="break-word">
