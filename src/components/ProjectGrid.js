@@ -5,6 +5,7 @@ import SpatialDJ from '../resources/images/spatialdj.png'
 import CrowdData from '../resources/images/crowddata.jpg'
 import CompGG from '../resources/images/compgg.jpg'
 import HootGuard from '../resources/images/HootGuard.jpg'
+import Tachometer from '../resources/images/Tachometer.png'
 
 const projects = [
   {
@@ -13,10 +14,12 @@ const projects = [
     description:
       'A web app that allows you to listen to music with friends! Features chat, playlists, and proximity audio.',
     text: [
+      'Silver prize winner (top 20 overall project) at Build on Redis 2021 Hackathon (see blog post below!)',
       'Designed UI prototype using Figma and implemented responsive layouts using React.js',
       'Created Socket.IO events in Express.js to allow real time communication between users.',
     ],
     stack: 'Express.js, Node.js, React.js, Redis, Socket.IO',
+    blog: 'https://redislabs.com/blog/build-on-redis-hackathon-winners/',
     devpost: null,
     github: 'https://github.com/spatialdj',
   },
@@ -26,6 +29,7 @@ const projects = [
     description:
       'A crowdsourcing platform where you can request data or contribute your own data sets.',
     text: [
+      'Placed top 4 out of over 30 submissions for the Dropbase API prize at Hack the North 2020++',
       'Integrated DropBase API to instantly upload user files to database from Node.js backend.',
       'Designed website components with React to handle form data and file upload.',
       "Featured in DropBase's blog post below!",
@@ -61,6 +65,18 @@ const projects = [
     stack: 'Java, XML, Firebase API, Android Studio',
     devpost: 'https://devpost.com/software/hootguard-xghezv',
     github: 'https://github.com/LeMichael88/HootGuard',
+  },
+  {
+    name: 'Magnetic Field Tachometer',
+    image: Tachometer,
+    description:
+      'A tachometer using Arduinos that detects the speed of nearby rotating magnetic fields',
+    text: [
+      'Implemented a C++ program to control motors and sensors, and calculate rotations per minute with an accuracy of ±0.05 RPM',
+    ],
+    stack: 'C++, Arduino',
+    devpost: null,
+    github: 'https://github.com/LeMichael88/MagneticFieldTachometer',
   },
 ]
 
