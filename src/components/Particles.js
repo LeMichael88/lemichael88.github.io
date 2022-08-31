@@ -1,71 +1,80 @@
-import React from 'react'
+import React, { useCallback } from 'react'
+import { loadFull } from 'tsparticles';
 import { useColorMode } from '@chakra-ui/react'
-import { Particles as ParticlesJS } from 'react-particles-js'
+import { Particles as ParticlesJS } from 'react-tsparticles'
 
 export default function Particles() {
   const { colorMode } = useColorMode()
+
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async () => {}, []);
+
   return (
-    <div
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
+    <ParticlesJS
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 175,
+              duration: 25,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: colorMode === 'light' ? '#000000' : '#FF5C79',
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            directions: "none",
+            enable: true,
+            outModes: {
+              default: "bounce",
+            },
+            random: false,
+            speed: 1.3,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 500,
+            },
+            value: 35,
+          },
+          opacity: {
+            value: 0.25,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            value: { min: 3, max: 8 },
+          },
+        },
       }}
-    >
-      <ParticlesJS
-        style={{
-          width: '100%',
-          height: '100%',
-          position: 'fixed',
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 50%',
-          backgroundRepeat: 'no-repeat',
-        }}
-        params={{
-          particles: {
-            number: {
-              value: 125,
-              density: {
-                enable: false,
-              },
-            },
-            color: {
-              value: colorMode === 'light' ? '#000000' : '#FF5C79',
-            },
-            size: {
-              value: 4,
-              random: true,
-              anim: {
-                speed: 5,
-                size_min: 0.3,
-              },
-            },
-            line_linked: {
-              enable: false,
-            },
-            move: {
-              random: true,
-              speed: 1,
-            },
-          },
-          interactivity: {
-            events: {
-              onclick: {
-                enable: true,
-                mode: 'repulse',
-              },
-            },
-            modes: {
-              repulse: {
-                distance: 350,
-                duration: 2,
-              },
-            },
-          },
-        }}
-      />
-    </div>
+    />
   )
 }
