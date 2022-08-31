@@ -4,22 +4,38 @@ import ExperienceCard from './ExperienceCard'
 import Newtopia from '../resources/images/Newtopia.png'
 import Manulife from '../resources/images/Manulife.png'
 import Applyboard from '../resources/images/Applyboard.png'
+import Riot from '../resources/images/RiotGames.png'
 
 const experienceList = [
   {
+    company: 'Riot Games',
+    location: 'Los Angeles, California',
+    role: 'Software Engineer Intern',
+    time: 'May 2022 - Aug 2022',
+    description: [
+      'Engineering a company-wide rate limiting solution using Go, handling over 100k API requests/min',
+      'Spearheading the project by writing system architecture documents and planning tasks with Jira',
+      'Utilized Redis as a distributed cache to store users’ rate limiting information and allowlists',
+      'Created Jenkins multibranch pipelines to automatically test, lint, build, and deploy changes on push',
+    ],
+    image: Riot,
+  },
+  {
     company: 'Applyboard',
     location: 'Waterloo, ON',
-    role: 'Software Engineer',
+    role: 'Software Engineer Intern',
     time: 'Sept 2021 - Dec 2021',
     description: [
-      'Incoming software engineer working on backend services used by thousands of students each day',
+      'Built backend services with Ruby on Rails and MySQL, helping users search for data more accurately',
+      'Secured APIs with a permission system using Pundit, protecting database from unauthorized users',
+      'Actively built and deployed code to production using CI/CD tools like Docker, Jenkins, AWS CodeBuild',
     ],
     image: Applyboard,
   },
   {
     company: 'Newtopia Inc.',
     location: 'Toronto, ON',
-    role: 'Software Developer',
+    role: 'Software Developer Intern',
     time: 'Jan 2021 - Apr 2021',
     description: [
       'Created new public API endpoints in Apex with improved security protecting 10000 monthly users',
@@ -32,7 +48,7 @@ const experienceList = [
   {
     company: 'Manulife',
     location: 'Waterloo, ON',
-    role: 'Salesforce Engineer',
+    role: 'Software Engineer Intern',
     time: 'May 2020 - Aug 2020',
     description: [
       'Developed a data aggregation framework using Apex and SOQL that helps diagnose over 33% of performance issues reported in Manulife’s services',

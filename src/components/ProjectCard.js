@@ -14,7 +14,7 @@ import {
 export default function ProjectCard({ data }) {
   return (
     <Flex w="full" p="1rem" alignItems="center" justifyContent="center">
-      <Box w="xl" mx="auto" shadow="lg" rounded="lg" overflow="hidden">
+      <Box w="xl" alignItems="center" h="100%" mx="auto" shadow="lg" rounded="lg" overflow="hidden">
         <Image
           w="full"
           h={56}
@@ -30,7 +30,7 @@ export default function ProjectCard({ data }) {
           </Heading>
         </Flex>
 
-        <Box bg="gray.800" py={4} px={6}>
+        <Flex direction="column" bg="gray.800" py={4} px={6} h="100%">
           <Text py={2} color="white">
             {data.description}
           </Text>
@@ -78,7 +78,7 @@ export default function ProjectCard({ data }) {
               Github
             </Button>
           </Flex>
-        </Box>
+        </Flex>
       </Box>
     </Flex>
   )

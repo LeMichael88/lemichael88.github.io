@@ -3,6 +3,7 @@ import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
 import SpatialDJ from '../resources/images/spatialdj.png'
 import CrowdData from '../resources/images/crowddata.jpg'
+import Constructor from '../resources/images/constructor.png'
 import CompGG from '../resources/images/compgg.jpg'
 import HootGuard from '../resources/images/HootGuard.jpg'
 import Tachometer from '../resources/images/Tachometer.png'
@@ -39,6 +40,19 @@ const projects = [
       'https://www.dropbase.io/post/hack-the-north-spotlights-dropstats-crowd-data-hive-vacalert',
     devpost: 'https://devpost.com/software/crowd-space',
     github: 'https://github.com/LeMichael88/crowd.data',
+  },
+  {
+    name: 'Constructor',
+    image: Constructor,
+    description:
+      'A CLI based board game',
+    text: [
+      'Engineered a C++ game based on Catan that can be played entirely on the command line.',
+      'Designed code base using OOP principles and design patterns such as Observer pattern.',
+      'Debugged various issues using GDB to ensure a high quality final product.',
+    ],
+    stack: 'C++',
+    github: 'https://github.com/LeMichael88/constructor',
   },
   {
     name: 'comp.gg',
