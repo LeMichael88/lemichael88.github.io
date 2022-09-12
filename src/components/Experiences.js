@@ -4,7 +4,7 @@ import ExperienceCard from './ExperienceCard'
 import Newtopia from '../resources/images/Newtopia.png'
 import Manulife from '../resources/images/Manulife.png'
 import Applyboard from '../resources/images/Applyboard.png'
-import Riot from '../resources/images/RiotGames.png'
+import Riot from '../resources/images/RiotGames.jpg'
 
 const experienceList = [
   {
