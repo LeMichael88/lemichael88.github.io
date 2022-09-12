@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/lemichael88.github.io/static/js/main.97a253bb.chunk.js",
-    "main.js.map": "/lemichael88.github.io/static/js/main.97a253bb.chunk.js.map",
+    "main.js": "/lemichael88.github.io/static/js/main.f8a4d67e.chunk.js",
+    "main.js.map": "/lemichael88.github.io/static/js/main.f8a4d67e.chunk.js.map",
     "runtime-main.js": "/lemichael88.github.io/static/js/runtime-main.41f1f606.js",
     "runtime-main.js.map": "/lemichael88.github.io/static/js/runtime-main.41f1f606.js.map",
     "static/js/2.28f42c15.chunk.js": "/lemichael88.github.io/static/js/2.28f42c15.chunk.js",
@@ -16,13 +16,13 @@
     "static/media/MyPicture.9ffd95de.JPG": "/lemichael88.github.io/static/media/MyPicture.9ffd95de.JPG",
     "static/media/Tachometer.16cc2afc.png": "/lemichael88.github.io/static/media/Tachometer.16cc2afc.png",
     "static/media/compgg.096637d7.jpg": "/lemichael88.github.io/static/media/compgg.096637d7.jpg",
-    "static/media/constructor.c8cb44ce.png": "/lemichael88.github.io/static/media/constructor.c8cb44ce.png",
+    "static/media/constructor.f7f19544.png": "/lemichael88.github.io/static/media/constructor.f7f19544.png",
     "static/media/crowddata.03c2bb05.jpg": "/lemichael88.github.io/static/media/crowddata.03c2bb05.jpg",
     "static/media/spatialdj.03929c12.png": "/lemichael88.github.io/static/media/spatialdj.03929c12.png"
   },
   "entrypoints": [
     "static/js/runtime-main.41f1f606.js",
     "static/js/2.28f42c15.chunk.js",
-    "static/js/main.97a253bb.chunk.js"
+    "static/js/main.f8a4d67e.chunk.js"
   ]
 }
