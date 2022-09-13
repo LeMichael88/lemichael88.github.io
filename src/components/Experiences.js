@@ -13,8 +13,8 @@ const experienceList = [
     role: 'Software Engineer Intern',
     time: 'May 2022 - Aug 2022',
     description: [
-      'Engineering a company-wide rate limiting solution using Go, handling over 100k API requests/min',
-      'Spearheading the project by writing system architecture documents and planning tasks with Jira',
+      'Engineered a company-wide rate limiting solution using Go, handling over 100k API requests/min',
+      'Spearheaded the project by writing system architecture documents and planning tasks with Jira',
       'Utilized Redis as a distributed cache to store users’ rate limiting information and allowlists',
       'Created Jenkins multibranch pipelines to automatically test, lint, build, and deploy changes on push',
     ],
