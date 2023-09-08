@@ -62,7 +62,7 @@ export default function Homepage() {
               <Text fontSize="lg">
                 Hey! My name is <b>Michael Le</b> and I&apos;m in my final year 
                 of computer science at the <b>University of Waterloo</b>. I&apos;m a software 
-                engineer primarily interested in <b>game development and computer graphics</b>! 
+                engineer primarily interested in <b>game development, computer graphics, and C++</b>! 
                 I&apos;ve had a diverse set of experiences, ranging from gameplay engineering at 
                 Riot Games, to compiler and AI research at Huawei, to fullstack web development 
                 at several other internships. I&apos;m always trying to learn something new by reading 
