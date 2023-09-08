@@ -15,6 +15,7 @@ export default function Header({ callbacks }) {
       <Wrap spacing="2.5em" margin="2em" justify="center" overflow="hidden">
         <WrapItem>
           <Button
+            w="230px"
             onClick={callbacks[0]}
             colorScheme="red"
             size="header"
@@ -25,6 +26,7 @@ export default function Header({ callbacks }) {
         </WrapItem>
         <WrapItem>
           <Button
+            w="230px"
             onClick={callbacks[1]}
             colorScheme="red"
             size="header"
@@ -35,6 +37,7 @@ export default function Header({ callbacks }) {
         </WrapItem>
         <WrapItem>
           <Button
+            w="230px"
             onClick={callbacks[2]}
             colorScheme="red"
             size="header"
@@ -45,6 +48,7 @@ export default function Header({ callbacks }) {
         </WrapItem>
         <WrapItem>
           <Button
+            w="230px"
             onClick={callbacks[3]}
             colorScheme="red"
             size="header"

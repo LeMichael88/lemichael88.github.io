@@ -11,19 +11,19 @@ import {
 } from '@chakra-ui/react'
 
 export default function ExperienceCard({ data }) {
-  const { company, location, role, time, description, image } = data
+  const { company, location, role, time, description, image, link } = data
   return (
-    <Wrap justify="center" pt="2.5rem">
-      <WrapItem>
-        <VStack spacing="0.5" fontSize="md">
-          <Image maxBlockSize="100px" src={image} />
-          <Text fontWeight="bold">{company}</Text>
-          <Text>{location}</Text>
-          <Text>{time}</Text>
-          <Text>{role}</Text>
+    <Wrap justify="center" pt="2.5rem" w="95%">
+      <WrapItem alignItems="center" justifyContent="center" w="35%">
+        <VStack spacing="0.5" fontSize="md" justifyContent="center">
+          <Image maxBlockSize="100px" src={image} onClick={() => window.open(link)} cursor="pointer"/>
+          <Text fontWeight="bold" align="center">{company}</Text>
+          <Text align="center">{location}</Text>
+          <Text align="center">{time}</Text>
+          <Text align="center">{role}</Text>
         </VStack>
       </WrapItem>
-      <WrapItem>
+      <WrapItem w="55%">
         <Flex alignItems="left">
           <UnorderedList pl="2rem" maxW="350px">
             {description.map((text) => (

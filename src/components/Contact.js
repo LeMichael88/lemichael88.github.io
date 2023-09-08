@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IconButton, Text, VStack, Wrap, WrapItem } from '@chakra-ui/react'
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
 import { HiMail } from 'react-icons/hi'
-import Resume from '../resources/MichaelLeResume_External.pdf'
+import Resume from '../resources/MichaelLeResume.pdf'
 
 function Contact() {
   const [size, setSize] = useState(70)
@@ -25,7 +25,6 @@ function Contact() {
             Github
           </Text>
           <IconButton
-            pb={size}
             onClick={() => window.open('https://github.com/LeMichael88')}
             variant="unstyled"
             icon={<FaGithub size={size} />}
@@ -40,7 +39,6 @@ function Contact() {
             LinkedIn
           </Text>
           <IconButton
-            pb={size2}
             onClick={() => window.open('https://www.linkedin.com/in/lemichael88/')}
             size="lg"
             variant="unstyled"
@@ -56,7 +54,6 @@ function Contact() {
             Resume
           </Text>
           <IconButton
-            pb={size3}
             onClick={() => window.open(Resume)}
             size="lg"
             variant="unstyled"
@@ -72,7 +69,6 @@ function Contact() {
             Email
           </Text>
           <IconButton
-            pb={size4}
             onClick={() => window.open('mailto:m42le@uwaterloo.ca')}
             size="lg"
             variant="unstyled"

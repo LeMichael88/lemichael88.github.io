@@ -12,7 +12,7 @@ import {
   WrapItem,
   Text,
 } from '@chakra-ui/react'
-import ProfileImage from '../resources/images/MyPicture.JPG'
+import ProfileImage from '../resources/images/ProfilePicture.png'
 import Particles from '../components/Particles'
 import Header from '../components/Header'
 import Contact from '../components/Contact'
@@ -40,8 +40,8 @@ export default function Homepage() {
       {/* Top Section */}
       <Center py="7rem" px="10em">
         <VStack textAlign="center">
-          <Heading size="2xl">Hello! I&apos;m Michael.</Heading>
-          <Heading size="lg">Welcome to my website</Heading>
+          <Heading size="3xl">Hey there! I&apos;m Michael.</Heading>
+          <Heading size="xl">Nice to meet you!</Heading>
         </VStack>
       </Center>
 
@@ -51,20 +51,29 @@ export default function Homepage() {
           <WrapItem>
             <Image
               mb="3rem"
-              htmlWidth="318"
-              htmlHeight="358.5"
+              htmlWidth="400"
+              htmlHeight="400"
               borderRadius="full"
               src={ProfileImage}
             />
           </WrapItem>
+          <WrapItem pb="1.5rem">
+            <Flex textAlign="center">
+              <Text fontSize="lg">
+                Hey! My name is <b>Michael Le</b> and I&apos;m in my final year 
+                of computer science at the <b>University of Waterloo</b>. I&apos;m a software 
+                engineer primarily interested in <b>game development and computer graphics</b>! 
+                I&apos;ve had a diverse set of experiences, ranging from gameplay engineering at 
+                Riot Games, to compiler and AI research at Huawei, to fullstack web development 
+                at several other internships. I&apos;m always trying to learn something new by reading 
+                CS books or research papers. When I&apos;m not coding, I like to play soccer, 
+                hit new PRs at the gym, and play all kinds of video games!
+              </Text>
+            </Flex>
+          </WrapItem>
           <WrapItem>
             <Flex textAlign="center">
               <Text fontSize="lg">
-                Hi! My name is <b>Michael Le</b> and I&apos;m currently in my second year
-                of computer science at the <b>University of Waterloo</b>. I&apos;m a
-                software developer looking to learn as much as I can. I enjoy working cool
-                projects and solving programming problems too! I&apos;m based in Toronto,
-                Canada and in my free time, I like to cook, bike, and play basketball.
                 Feel free to contact me or take a look at my resume below!
               </Text>
             </Flex>
