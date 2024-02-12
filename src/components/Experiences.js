@@ -11,7 +11,7 @@ const experienceList = [
   {
     company: 'Riot Games',
     location: 'Los Angeles, California',
-    role: 'Gameplay Software Engineer Intern',
+    role: 'Software Engineer Intern',
     time: 'May 2023 - Aug 2023',
     description: [
       'Refactored core game and engine level code in C++ to support an unreleased feature for League of Legends',
