@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
+import RayTracer from '../resources/images/raytracer.png'
 import SpatialDJ from '../resources/images/spatialdj.png'
 import CrowdData from '../resources/images/crowddata.jpg'
 import Constructor from '../resources/images/constructor.png'
@@ -9,6 +10,19 @@ import HootGuard from '../resources/images/HootGuard.jpg'
 import Tachometer from '../resources/images/Tachometer.png'
 
 const projects = [
+  {
+    name: 'C++ Ray Tracing Framework',
+    image: RayTracer,
+    description:
+      'A custom ray tracing framework capable of rendering modelled scenes and is easily extensible.',
+    text: [
+      'Created a custom ray tracer featuring sphere/box/mesh intersection, Phong illumination, anti-aliasing, reflection, hierarchical modelling, and transformations.',
+      'Accelerated rendering time by 85% using adaptive super sampling and bounding volumes.',
+    ],
+    stack: 'C++',
+    devpost: null,
+    github: null,
+  },
   {
     name: 'Spatial.DJ',
     image: SpatialDJ,

@@ -69,14 +69,16 @@ export default function ProjectCard({ data }) {
                 Devpost
               </Button>
             ) : null}
-            <Button
-              colorScheme="red"
-              fontWeight="bold"
-              rounded="lg"
-              onClick={() => window.open(data.github)}
-            >
-              Github
-            </Button>
+            {data.devpost ? (
+              <Button
+                colorScheme="red"
+                fontWeight="bold"
+                rounded="lg"
+                onClick={() => window.open(data.github)}
+              >
+                Github
+              </Button>
+            ) : null}
           </Flex>
         </Flex>
       </Box>
