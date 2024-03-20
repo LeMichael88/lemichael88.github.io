@@ -17,7 +17,7 @@ const projects = [
       'A custom ray tracing framework capable of rendering modelled scenes and is easily extensible.',
     text: [
       'Created a custom ray tracer featuring sphere/box/mesh intersection, Phong illumination, anti-aliasing, reflection, hierarchical modelling, and transformations.',
-      'Accelerated rendering time by 85% using adaptive super sampling and bounding volumes.',
+      'Accelerated rendering time by 85% using multithreading and bounding volumes around meshes.',
     ],
     stack: 'C++',
     devpost: null,
