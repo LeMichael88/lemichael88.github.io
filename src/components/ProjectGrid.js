@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
 import RayTracer from '../resources/images/raytracer.png'
+import BankNoteForgeryClassifier from '../resources/images/banknote.jpg'
 import SpatialDJ from '../resources/images/spatialdj.png'
 import CrowdData from '../resources/images/crowddata.jpg'
 import Constructor from '../resources/images/constructor.png'
@@ -16,10 +17,23 @@ const projects = [
     description:
       'A custom ray tracing framework capable of rendering modelled scenes and is easily extensible.',
     text: [
-      'Created a custom ray tracer featuring sphere/box/mesh intersection, Phong illumination, anti-aliasing, reflection, hierarchical modelling, and transformations.',
-      'Accelerated rendering time by 85% using multithreading and bounding volumes around meshes.',
+      'Created a ray tracer featuring sphere/box/mesh intersection, particle systems, Phong illumination, anti-aliasing, reflection, hierarchical modelling, and transformations.',
+      'Accelerated rendering time by 85% using multi-threading and bounding volumes around meshes and particles.',
     ],
     stack: 'C++',
+    devpost: null,
+    github: null,
+  },
+  {
+    name: 'Bank Note Forgery Classifier',
+    image: BankNoteForgeryClassifier,
+    description:
+      'A neural network trained to classify forged vs real bank notes.',
+    text: [
+      'Trained a neural network in Python to classify forged banknotes from a UCI ML dataset with 97% accuracy.',
+      'Implemented k-fold cross validation, gradient descent, and backpropagation using numpy and pandas.',
+    ],
+    stack: 'Python',
     devpost: null,
     github: null,
   },
