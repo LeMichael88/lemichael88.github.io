@@ -15,8 +15,8 @@ const experienceList = [
     time: 'May 2023 - Aug 2023',
     description: [
       'Developed an enhanced pathfinding system in League of Legends using HavokAI, reducing search times by up to 33%.',
+      'Refactored core game and engine code in C++ to support WASD controls for the League of Legends game mode, Swarm.',
       'Built in-game debugging tools using ImGUI to visualize pathfinding and movement data, aiding development efficiency.',
-      'Refactored core game and engine level code in C++ to support an unreleased game mode for League of Legends.',
       'Shipped bug fixes for in-game UI and character spells via Perforce, improving the experience for millions of players.',
     ],
     image: Riot,
